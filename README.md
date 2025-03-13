@@ -1,4 +1,7 @@
 # DevKick
+
+1.0.2 Public - https://www.npmjs.com/package/devkick
+
 **DevKick** is a colorful, interactive command-line tool designed to help developers kickstart their projects with ease. Whether you're working with Docker, web apps, or Python, DevKick checks your environment, suggests fixes, and runs startup tasks—all from your terminal.
 
 ## Features
