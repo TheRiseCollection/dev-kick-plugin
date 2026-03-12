@@ -92,4 +92,4 @@ Bug reports and pull requests are welcome.
 
 ### Changelog
 
-- **1.0.3** – Improved README and npm metadata (homepage, repository, bugs) for better discoverability.
+- **1.0.6** – Improved README and npm metadata (homepage, repository, bugs) for better discoverability.
