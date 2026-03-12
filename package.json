@@ -1,7 +1,7 @@
 {
   "name": "devkick",
-  "version": "1.0.2",
-  "description": "A CLI tool to kickstart developer environments",
+  "version": "1.0.3",
+  "description": "A colorful, interactive CLI to kickstart developer environments.",
   "main": "src/devkick.js",
   "bin": {
     "devkick": "./bin/index.js"
@@ -9,9 +9,17 @@
   "scripts": {
     "start": "node bin/index.js"
   },
-  "keywords": ["cli", "developer", "startup"],
+  "keywords": ["cli", "developer", "startup", "devops", "bootstrap"],
   "author": "Joshua Paulsen",
   "license": "MIT",
+  "homepage": "https://www.therisecollection.co/portfolio/devkick",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheRiseCollection/dev-kick-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheRiseCollection/dev-kick-plugin/issues"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^12.0.0",
