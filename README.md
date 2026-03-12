@@ -1,5 +1,9 @@
 ## devKick
 
+[![npm version](https://img.shields.io/npm/v/devkick.svg)](https://www.npmjs.com/package/devkick)
+[![npm downloads](https://img.shields.io/npm/dm/devkick.svg)](https://www.npmjs.com/package/devkick)
+[![license](https://img.shields.io/npm/l/devkick.svg)](https://www.npmjs.com/package/devkick)
+
 **devKick** is a colorful, interactive CLI that runs quick checks and startup tasks for your Docker, web, and Python projects so you can get to coding faster.
 
 ### Getting Started
@@ -92,4 +96,4 @@ Bug reports and pull requests are welcome.
 
 ### Changelog
 
-- **1.0.6** – Improved README and npm metadata (homepage, repository, bugs) for better discoverability.
+- **1.0.7** – Add npm badges and small README polish.
