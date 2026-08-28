@@ -87,6 +87,34 @@ devkick start
 - It cannot auto-start Docker Desktop; if Docker isn’t running, you’ll be prompted to start it manually.
 - You can safely re-run `devkick start` as often as you like while you’re working on a project.
 
+## Development
+
+```
+npm install
+node bin/index.js start     # run from source
+npm link                    # put `devkick` on your PATH while iterating
+```
+
+devKick asks before it runs anything. Keep it that way when adding a task: the tool
+runs `git pull`, `npm install`, `docker-compose up` and `pip install` in someone
+else's project, and a prompt is the only thing standing between "helpful startup
+script" and "ran a migration I did not expect."
+
+## Decisions of record
+
+* **Every action is confirmed before it runs.** The value here is remembering the six
+  things you do at the start of a session, not doing them without asking. A
+  non-interactive mode would turn a convenience into a risk.
+
+* **Project type is detected, not configured.** Docker, web and Python projects are
+  recognised from what is in the directory, so there is no config file to get out of
+  date with the project it describes.
+
+* **`node_modules/` is not committed.** It was — 3,760 files, 158,849 lines, in a repo
+  whose published artifact is four source files — because this repo shipped without a
+  `.gitignore` at all. Both were fixed together, since a `.gitignore` added later has
+  no effect on paths already in the index.
+
 ### Contributing & Support
 
 - **Source code / issues**: `https://github.com/TheRiseCollection/dev-kick-plugin`
