@@ -1,0 +1,7 @@
+# No test suite exists here, and this is not pretending to be one. It parses every
+# JavaScript file git actually tracks — which is what ships to npm — so a syntax
+# error cannot reach a published package. Uses git ls-files rather than find so
+# node_modules and build output are excluded by definition rather than by pattern.
+files=$(git ls-files '*.js' | grep -v node_modules)
+[ -n "$files" ] || { echo "no tracked .js files"; exit 1; }
+echo "$files" | xargs -n1 node --check && echo "$(echo "$files" | wc -l | tr -d ' ') tracked files parse"
